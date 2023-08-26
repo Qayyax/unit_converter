@@ -1,0 +1,170 @@
+:root {
+  --background-color: #1f2937;
+  --heading: 800;
+  --unit-heading: 600;
+  --unit-heading-color: #ccc1ff;
+  --text: 400;
+  --top-div-color: #ccc1ff;
+}
+
+/* Removing arrow from Input */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+/* Div for the app */
+.container {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 729px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/* Div for top section of the app */
+
+.top {
+  height: 285px;
+  background-color: var(--top-div-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: var(--heading);
+  margin-bottom: 35px;
+  width: 448.4px;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+#unit {
+  border: 2px solid #b295ff;
+  background-color: var(--top-div-color);
+  color: white;
+  width: 117px;
+  height: 83px;
+  border-radius: 5px;
+  font-weight: var(--heading);
+  font-size: 58px;
+  line-height: 24.39px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  width: 117px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+  box-shadow: 0 1 2 #0000000d;
+  color: #3d3d3d;
+}
+
+/* Div for bottom section of the app */
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  row-gap: 23.43px;
+}
+
+.metric {
+  width: 500px;
+  height: 108.57px;
+  border-radius: 5px, 0px, 0px, 0px;
+  background-color: #273549;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 9px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+h3 {
+  color: var(--unit-heading-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+p {
+  font-weight: var(--text);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Media query */
+
+@media (max-width: 600px) {
+  .container {
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #unit {
+    width: 50%;
+    font-size: 4em;
+    margin-bottom: 10px;
+  }
+
+  .metric {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+}
