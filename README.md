@@ -2,6 +2,10 @@
  
 This is another mini project from the **Srimba Front-end Career path** program, which is about converting units based on an input. 
 
+> Link to deployed site
+
+https://unitconverter11.netlify.app
+
 ## What I learnt from this project 
 
 - DOM Manipulation
